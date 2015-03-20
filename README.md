@@ -5,7 +5,7 @@
 安裝需求：nodejs
 
 1. `$ npm install`
-2. `$ COUNTS=100 ./node_modules/.bin/babel-node main.es6'
+2. `$ COUNTS=100 ./node_modules/.bin/babel-node main.es6`
 
 # TODO
 
