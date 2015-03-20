@@ -12,3 +12,7 @@
 1. save to csv
 2. 完成其他參數 `year_month_select`, `date_select`
 3. 自動化
+
+# LICENSE
+
+[MIT LICENSE](LICENSE.md)
