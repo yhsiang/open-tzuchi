@@ -1,7 +1,10 @@
 import request from "request";
 import cheerio from "cheerio";
 import async from "async";
-const COUNTS = process.env.COUNTS || 100;
+import { flatten } from "prelude-ls";
+
+
+const COUNTS = process.env.COUNTS || 20000;
 
 var query = ["query"];
 for(var i= 1; i<= COUNTS; i++) {
@@ -30,7 +33,12 @@ function fetch(query, next) {
   });
 }
 
+console.log("序號, 人名, 理由, 捐獻數目");
 async.map(query, fetch, (err, results) => {
-  console.log(results);
+  results.forEach( (result) => {
+    result.forEach( ( [no, name, reason, donation]:row) => {
+      console.log(`${no}, ${name}, ${reason}, ${donation}`);
+    });
+  });
 });
 
