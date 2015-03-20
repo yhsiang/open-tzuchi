@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "babel-node main.es6"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "babel": "^4.7.16",
+    "cheerio": "^0.18.0",
+    "request": "^2.53.0"
+  }
+}
